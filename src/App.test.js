@@ -1,9 +1,17 @@
 import {renderApp, screen} from './testEnv'
 
-test('test something', async () => {
+test('test text input', async () => {
   const {user} = renderApp()
 
-  await user.type(screen.getByRole('input'), 'abc')
+  const input = screen.getByTestId('paper-input')
+  await user.type(input, 'hello')
+  expect(screen.getByTestId('output')).toHaveTextContent('hello')
+})
 
-  expect(screen.getByTestId('output')).toHaveTextContent('abc')
+test('test clear', async() => {
+  const {user} = renderApp()
+
+  const input = screen.getByTestId('paper-input')
+  await user.type(input, 'hello')
+  await user.clear(input)
 })

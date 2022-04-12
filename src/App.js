@@ -47,6 +47,7 @@ export function App() {
       <PaperInputWrapper onChange={changeInput}>
         <paper-input
           always-float-label
+          data-testid="paper-input"
           label="Custom Element"
           onChange={(e) => setVal(e.target.value)}
         ></paper-input>
