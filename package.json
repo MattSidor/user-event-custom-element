@@ -1,0 +1,34 @@
+{
+  "name": "user-event-custom-element",
+  "keywords": [],
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "@polymer/paper-input": "3.2.1",
+    "@testing-library/jest-dom": "5.16.3",
+    "@testing-library/react": "13.0.0",
+    "@testing-library/user-event": "14.0.3",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "format": "prettier --write \"**/*.+(js|json|css|md|mdx|html)\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
